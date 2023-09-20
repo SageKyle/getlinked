@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* html {
+	width: 100%;
+	scroll-behavior: smooth;
+	font-size: 62.5%;
+} */
+
+:root {
+	--background-color: #150e28;
+	--text-color: #fff;
+	--dark-purple: #903aff;
+	--pale-purple: #d434fe;
+	--gradient: linear-gradient(to left, rgb(144, 58, 255), rgb(254, 52, 185));
+}
+
+body {
+	background-color: var(--background-color);
+	color: var(--text-color);
+	font-size: 1.6rem;
+	width: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+a,
+a:link {
+	text-decoration: none;
+	color: inherit;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
