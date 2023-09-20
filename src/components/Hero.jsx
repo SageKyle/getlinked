@@ -6,12 +6,12 @@ import PrimaryBtn from './PrimaryBtn'
 
 export default function Hero() {
 	return (
-		<article className="w-full flex flex-col items-end justify-end pl-6 lg:h-[calc(100vh-10rem)] border-b border-primary-border glow-bg">
+		<article className="w-full flex flex-col items-end justify-end pt-16 lg:h-screen border-b-2 border-primary-border glow-bg relative">
 			<h2 className="mt-4 mr-6">
 				Igniting a revolution in{' '}
 				<span className="purple-underline">HR Innovation</span>
 			</h2>
-			<section className="w-full h-[90%] grid items-center justify-between lg:grid-cols-[auto_55%] pl-16">
+			<section className="w-full h-4/5 grid items-center justify-between lg:grid-cols-[auto_55%] pl-16">
 				<div className="w-full h-auto">
 					<img src={TitleImage} alt="Getlinked Tech Hackathon 1.0" />
 					<p className="my-4 relative">

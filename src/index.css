@@ -62,13 +62,24 @@ a:link {
 }
 
 .glow-bg {
-	background: url('public/purple-lens-flare.svg'),
-		var(--background-color) -155.25px -155px / 114.411% 118.9% no-repeat;
+	background-image: url('/purple-lens-flare.svg');
+	background-color: var(--background-color);
 	background-blend-mode: hard-light;
-	background-position-y: 80%;
-	background-position-x: left;
-	/* background-size: 50%; */
-	background-repeat: no-repeat;
+	background-position-y: 100%;
+	background-position-x: -20%;
+	background-repeat: repeat-x;
 }
+
+/* .glow-bg::before {
+	content: url('/purple-lens-flare.svg');
+	object-fit: contain;
+	display: block;
+	width: 2rem;
+	aspect-ratio: 1/1;
+	border-radius: 50rem;
+	position: absolute;
+	top: -14rem;
+	left: 4rem;
+} */
 
 /* bg-purple-glow bg-[#150e28] bg-opacity-30  bg-no-repeat [background-position:-50%_50%] */

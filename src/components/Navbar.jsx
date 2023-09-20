@@ -5,7 +5,7 @@ import PrimaryBtn from './PrimaryBtn'
 export default function Navbar() {
 	return (
 		<header
-			className={`w-full text-lg justify-between capitalize flex items-center py-8 px-16`}
+			className={`w-full text-lg justify-between capitalize flex items-center py-8 px-16 fixed top-0 z-10 bg-[#150e28] bg-opacity-10 border-b border-primary-border`}
 		>
 			<NavLink to={'/'}>
 				<img src={Logo} className="" alt="getlinked" />
