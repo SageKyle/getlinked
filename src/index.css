@@ -65,9 +65,10 @@ a:link {
 	background-image: url('/purple-lens-flare.svg');
 	background-color: var(--background-color);
 	background-blend-mode: hard-light;
-	background-position-y: 100%;
-	background-position-x: -20%;
-	background-repeat: repeat-x;
+	background-position-y: 50%;
+	background-size: contain;
+	background-position-x: 6rem;
+	background-repeat: no-repeat;
 }
 
 /* .glow-bg::before {
@@ -80,6 +81,10 @@ a:link {
 	position: absolute;
 	top: -14rem;
 	left: 4rem;
-} */
+} 
+width: 64.8125rem;
+height: 59.25rem;
+flex-shrink: 0;
+*/
 
 /* bg-purple-glow bg-[#150e28] bg-opacity-30  bg-no-repeat [background-position:-50%_50%] */
