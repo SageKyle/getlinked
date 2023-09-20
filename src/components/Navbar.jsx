@@ -1,19 +1,17 @@
 import { NavLink } from 'react-router-dom'
 import Logo from '../assets/icons/logo.svg'
-import utils from '../assets/styles/Helpers.module.css'
-import Styles from '../assets/styles/Navbar.module.css'
 import PrimaryBtn from './PrimaryBtn'
 
 export default function Navbar() {
 	return (
 		<header
-			className={`${utils.flexContainer} ${Styles.container} text-lg font-semibold justify-between capitalize`}
+			className={`w-full text-lg justify-between capitalize flex items-center py-8 px-16`}
 		>
 			<NavLink to={'/'}>
 				<img src={Logo} className="" alt="getlinked" />
 			</NavLink>
-			<nav className={`${utils.flexContainer} ${Styles.navWrapper}`}>
-				<ul className={`${utils.flexContainer} ${Styles.navSection}`}>
+			<nav className={` flex items-center gap-10 `}>
+				<ul className={` flex items-center gap-8`}>
 					<li>
 						<NavLink to={''}>timeline</NavLink>
 					</li>

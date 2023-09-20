@@ -4,7 +4,7 @@ import Navbar from './components/Navbar'
 
 function App() {
 	return (
-		<section className="App">
+		<section className="App ">
 			<Navbar />
 			<Outlet />
 		</section>

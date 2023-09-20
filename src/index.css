@@ -43,3 +43,32 @@ a:link {
 	padding: 0;
 	box-sizing: border-box;
 }
+
+.purple-underline {
+	display: inline-block;
+	position: relative;
+	width: fit-content;
+	object-fit: contain;
+}
+
+.purple-underline::after {
+	display: flex;
+	content: url('./assets/icons/purple-underline.png');
+	position: absolute;
+	width: 2rem;
+	top: 1rem;
+	/* left: 0;
+	right: 0; */
+}
+
+.glow-bg {
+	background: url('public/purple-lens-flare.svg'),
+		var(--background-color) -155.25px -155px / 114.411% 118.9% no-repeat;
+	background-blend-mode: hard-light;
+	background-position-y: 80%;
+	background-position-x: left;
+	/* background-size: 50%; */
+	background-repeat: no-repeat;
+}
+
+/* bg-purple-glow bg-[#150e28] bg-opacity-30  bg-no-repeat [background-position:-50%_50%] */
