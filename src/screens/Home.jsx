@@ -1,3 +1,4 @@
+import CritieriaSection from '../components/Criteria'
 import Hero from '../components/Hero'
 import IdeaSection from '../components/IdeaSection'
 import RulesSection from '../components/RulesSection'
@@ -8,6 +9,7 @@ export default function Home() {
 			<Hero />
 			<IdeaSection />
 			<RulesSection />
+			<CritieriaSection />
 		</section>
 	)
 }

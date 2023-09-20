@@ -4,7 +4,7 @@ import RulesImage from '../assets/images/solving-puzzle.png'
 
 export default function RulesSection() {
 	return (
-		<section className="w-full flex flex-col gap-4 items-center justify-center px-24 py-10 lg:flex-row-reverse lg:max-h-[80vh] relative">
+		<section className="w-full flex flex-col gap-4 items-center justify-center border-b border-primary-border px-24 py-10 lg:flex-row-reverse lg:max-h-[80vh] relative">
 			<img
 				src={GlowImage}
 				loading="lazy"
