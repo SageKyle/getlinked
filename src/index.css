@@ -74,6 +74,74 @@ a:link {
 	background-repeat: no-repeat;
 }
 
+.box-item-1,
+.box-item-2,
+.box-right,
+.box-top-left {
+	position: relative;
+	display: flex;
+}
+
+.box-item-1::before,
+.box-item-1::after,
+.box-item-2::before,
+.box-item-2::after,
+.box-right::before,
+.box-right::after,
+.box-top-left::before,
+.box-top-left::after {
+	content: '';
+	display: inline-block;
+	background-color: var(--pale-purple);
+	position: absolute;
+	z-index: 1;
+}
+/* horizontal */
+.box-item-1::before {
+	height: 2px;
+	bottom: 0;
+	right: 2rem;
+	left: 0;
+}
+/* horizontal */
+.box-item-2::before {
+	height: 2px;
+	bottom: 0;
+	right: 2rem;
+	left: 2rem;
+}
+/* vertical */
+.box-item-1::after,
+.box-item-2::after {
+	width: 2px;
+	right: 0;
+	top: 0;
+	bottom: 2rem;
+}
+/* vertical */
+.box-right::after {
+	width: 2px;
+	right: 0;
+	bottom: 0;
+	top: 2rem;
+}
+
+/* vertical */
+.box-top-left::after {
+	width: 2px;
+	bottom: 0;
+	top: 2rem;
+	left: 0;
+}
+
+/* horizontal */
+.box-top-left::before {
+	height: 2px;
+	top: 0;
+	right: 0;
+	left: 2rem;
+}
+
 /* .glow-bg::before {
 	content: url('/purple-lens-flare.svg');
 	object-fit: contain;
