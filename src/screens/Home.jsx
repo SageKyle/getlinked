@@ -4,6 +4,7 @@ import FAQSection from '../components/FAQ'
 import Hero from '../components/Hero'
 import IdeaSection from '../components/IdeaSection'
 import PartnersSection from '../components/PartnersSection'
+import PolicySection from '../components/PolicySection'
 import RulesSection from '../components/RulesSection'
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
 			<FAQSection />
 			<AwardSection />
 			<PartnersSection />
+			<PolicySection />
 		</section>
 	)
 }
