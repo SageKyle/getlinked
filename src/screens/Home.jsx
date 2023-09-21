@@ -1,3 +1,4 @@
+import AwardSection from '../components/AwardSection'
 import CritieriaSection from '../components/Criteria'
 import FAQSection from '../components/FAQ'
 import Hero from '../components/Hero'
@@ -12,6 +13,7 @@ export default function Home() {
 			<RulesSection />
 			<CritieriaSection />
 			<FAQSection />
+			<AwardSection />
 		</section>
 	)
 }
