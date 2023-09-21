@@ -7,6 +7,7 @@ import IdeaSection from '../components/IdeaSection'
 import PartnersSection from '../components/PartnersSection'
 import PolicySection from '../components/PolicySection'
 import RulesSection from '../components/RulesSection'
+import TimelineSection from '../components/TimelineSection'
 
 export default function Home() {
 	return (
@@ -16,6 +17,7 @@ export default function Home() {
 			<RulesSection />
 			<CritieriaSection />
 			<FAQSection />
+			<TimelineSection />
 			<AwardSection />
 			<PartnersSection />
 			<PolicySection />
