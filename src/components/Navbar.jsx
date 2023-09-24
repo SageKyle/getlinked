@@ -9,7 +9,7 @@ export default function Navbar() {
 	const [showNav, toggleShowNav] = useState(false)
 	return (
 		<header
-			className={`w-full text-lg justify-between capitalize flex items-center py-8 px-16 relative border-b border-primary-border`}
+			className={`w-full text-lg justify-between capitalize flex items-center py-8 px-6 lg:px-16 relative border-b border-primary-border`}
 		>
 			<NavLink to={'/'}>
 				<img src={Logo} className="inline-block mr-auto" alt="getlinked" />
@@ -19,7 +19,7 @@ export default function Navbar() {
 					role="navigation"
 					className={`flex items-center justify-center gap-4 absolute inset-0 w-full flex-col transition-all duration-500 ease-in-out bg-[#150e28] lg:static lg:bg-transparent lg:h-auto lg:flex-row lg:w-fit ${
 						showNav
-							? 'translate-y-0 z-[2] h-screen'
+							? 'translate-y-0 z-10 h-screen'
 							: '-translate-y-[30rem] -z-[5] lg:translate-y-0 lg:z-auto'
 					}`}
 				>

@@ -47,23 +47,6 @@ a:link {
 	box-sizing: border-box;
 }
 
-.purple-underline {
-	display: inline-block;
-	position: relative;
-	width: fit-content;
-	object-fit: contain;
-}
-
-.purple-underline::after {
-	display: flex;
-	content: url('./assets/icons/purple-underline.png');
-	position: absolute;
-	width: 2rem;
-	top: 1rem;
-	/* left: 0;
-	right: 0; */
-}
-
 .glow-bg {
 	background-image: url('/purple-lens-flare.svg');
 	background-color: var(--background-color);
