@@ -20,7 +20,7 @@ export default function Hero() {
 					/>
 				</span>
 			</h2>
-			<section className="w-full h-auto px-6 mt-6 pb-0 lg:h-[90%] flex flex-col items-center justify-end lg:justify-center lg:grid lg:grid-cols-[auto_55%] lg:px-0 lg:pb-0">
+			<section className="w-full h-auto px-6 mt-6 pb-0 lg:h-[90%] flex flex-col items-center justify-end lg:justify-center lg:grid lg:grid-cols-[auto_55%] lg:pb-0">
 				<div className="w-full h-auto lg:h-full">
 					<img
 						src={TitleImage}

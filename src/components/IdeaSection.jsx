@@ -4,19 +4,19 @@ import Idea from '../assets/images/idea-illustration.png'
 
 export default function IdeaSection() {
 	return (
-		<section className="w-full grid gap-4 items-center justify-center border-b border-primary-border px-24 py-10 lg:grid-cols-2 lg:max-h-[80vh]">
-			<div className="w-full pl-10 flex relative">
+		<section className="w-full grid gap-4 items-center justify-center border-b border-primary-border px-8 py-10 lg:grid-cols-2 lg:max-h-[80vh]">
+			<div className="w-full pl-6 flex relative mb-8 lg:mb-0">
 				<img
 					src={PurpleStar}
 					alt=""
 					loading="lazy"
-					className="inline-block w-6 h-6 absolute top-1/3 -left-3"
+					className="inline-block w-6 h-6 absolute top-1/3 -left-3 animate-pulse transition-all duration-200"
 				/>
 				<img
 					src={Idea}
 					loading="lazy"
 					alt="idea lightbulb illustration"
-					className="w-4/5 py-6 aspect-square"
+					className="w-4/5 max-w-xs mx-auto py-6 aspect-square"
 				/>
 				<img
 					src={ArrowIcon}
@@ -36,7 +36,7 @@ export default function IdeaSection() {
 					src={PurpleStar}
 					alt=""
 					loading="lazy"
-					className="inline-block absolute right-4 top-6"
+					className="inline-block absolute right-4 top-6 animate-pulse transition-all duration-200"
 				/>
 				<p className="text-base font-light">
 					Our tech hackathon is a melting pot of visionaries, and its purpose is
