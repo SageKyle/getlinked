@@ -4,7 +4,10 @@ import RulesImage from '../assets/images/solving-puzzle.png'
 
 export default function RulesSection() {
 	return (
-		<section className="w-full flex flex-col gap-4 items-center justify-center border-b border-primary-border px-24 py-10 lg:flex-row-reverse lg:max-h-[80vh] relative">
+		<section
+			className="w-full flex flex-col gap-4 items-center justify-center border-b border-primary-border px-8 lg:px-24 py-10 lg:flex-row-reverse lg:max-h-[80vh] relative"
+			aria-description="rules and regulations"
+		>
 			<img
 				src={GlowImage}
 				loading="lazy"
@@ -17,7 +20,7 @@ export default function RulesSection() {
 					src={RulesImage}
 					loading="lazy"
 					alt="idea lightbulb illustration"
-					className="w-full aspect-square"
+					className="w-full max-w-xl mx-auto aspect-square"
 				/>
 			</div>
 			<div className="w-full flex flex-col gap-3 relative">
@@ -32,9 +35,9 @@ export default function RulesSection() {
 					alt=""
 					aria-hidden
 					loading="lazy"
-					className="inline-block opacity-40 w-4 absolute right-1/2 top-2"
+					className="inline-block opacity-40 w-4 absolute right-0 top-8 lg:right-1/2 lg:top-2 animate-pulse transition-all duration-200"
 				/>
-				<p className="text-base font-light">
+				<p className="text-xs text-center md:text-base font-light lg:text-left">
 					Our tech hackathon is a melting pot of visionaries, and its purpose is
 					as clear as day: to shape the future. Whether you&apos;re a coding
 					genius, a design maverick, or a concept wizard, you&apos;ll have the
@@ -47,7 +50,7 @@ export default function RulesSection() {
 					alt=""
 					aria-hidden
 					loading="lazy"
-					className="inline-block absolute -bottom-6 -right-6"
+					className="inline-block h-4 absolute -bottom-6 right-3/4 lg:h-10 lg:-right-6 animate-pulse transition-all duration-200"
 				/>
 			</div>
 		</section>
