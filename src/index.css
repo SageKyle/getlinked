@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Unica+One&display=swap');
+
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@700,600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -45,6 +48,17 @@ a:link {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+.countdown {
+	font-family: 'Unica One', cursive;
+}
+
+.hero-txt {
+	font-family: 'Clash Display', sans-serif;
+	font-weight: bold;
+	/* font-size: 5rem; */
+	line-height: 1;
 }
 
 .glow-bg {
