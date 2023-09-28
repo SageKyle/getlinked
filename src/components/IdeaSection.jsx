@@ -4,11 +4,15 @@ import Idea from '../assets/images/idea-illustration.png'
 
 export default function IdeaSection() {
 	return (
-		<section className="w-full grid gap-4 items-center justify-center border-b border-primary-border px-8 py-10 lg:grid-cols-2 lg:max-h-[80vh]">
-			<div className="w-full pl-6 flex relative mb-8 lg:mb-0">
+		<section
+			className="w-full grid gap-4 items-center justify-center border-b border-primary-border px-8 py-10 lg:grid-cols-2 lg:max-h-[80vh]"
+			aria-describedby="idea-section"
+		>
+			<div className="w-full pl-6 flex flex-col relative mb-2 md:mb-8 lg:mb-0">
 				<img
 					src={PurpleStar}
 					alt=""
+					aria-hidden
 					loading="lazy"
 					className="inline-block w-6 h-6 absolute top-1/3 -left-3 animate-pulse transition-all duration-200"
 				/>
@@ -21,24 +25,29 @@ export default function IdeaSection() {
 				<img
 					src={ArrowIcon}
 					alt=""
+					aria-hidden
 					loading="lazy"
-					className="inline-block absolute right-20 bottom-2"
+					className="inline-block lg:absolute h-10 lg:right-20 bottom-2"
 				/>
 			</div>
-			<div className="w-full flex flex-col gap-3 relative">
-				<h4 className="text-2xl text-center font-bold lg:text-left">
+			<div className="w-full flex flex-col gap-2 md:gap-3 relative">
+				<h4
+					className="text-xl md:text-2xl text-center font-bold lg:text-left"
+					id="idea-section"
+				>
 					Introduction to getlinked
 				</h4>
-				<h4 className="text-2xl text-center font-bold lg:text-left text-primary">
+				<h4 className="text-xl md:text-2xl text-center font-bold lg:text-left text-primary">
 					tech Hackathon 1.0
 				</h4>
 				<img
 					src={PurpleStar}
 					alt=""
+					aria-hidden
 					loading="lazy"
-					className="inline-block absolute right-4 top-6 animate-pulse transition-all duration-200"
+					className="inline-block absolute h-4 -right-2 md:right-20 top-6 animate-pulse transition-all duration-200"
 				/>
-				<p className="text-base font-light">
+				<p className=" text-xs md:text-base font-light">
 					Our tech hackathon is a melting pot of visionaries, and its purpose is
 					as clear as day: to shape the future. Whether you&apos;re a coding
 					genius, a design maverick, or a concept wizard, you&apos;ll have the
