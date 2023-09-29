@@ -6,44 +6,47 @@ import PrimaryBtn from './PrimaryBtn'
 
 export default function CritieriaSection() {
 	return (
-		<section className="w-full grid gap-4 items-center justify-center border-b border-primary-border px-24 py-14 lg:grid-cols-2">
-			<div className="w-full pl-10 flex relative">
+		<section
+			className="w-full grid gap-4 items-center justify-center border-b border-primary-border px-8 lg:px-24 py-14 lg:grid-cols-2"
+			aria-description="judging criteria and key attributes"
+		>
+			<div className="w-full lg:pl-10 flex relative">
 				<img
 					src={PurpleStar}
 					alt=""
 					aria-hidden
 					loading="lazy"
-					className="inline-block absolute -top-16 left-32"
+					className="inline-block absolute h-4 -top-8 left-1/2 lg:-top-16 lg:left-32 lg:h-10 animate-pulse transition-all duration-200"
 				/>
 				<img
 					src={Circle}
 					alt=""
 					aria-hidden
 					loading="lazy"
-					className="inline-block w-20 h-20 absolute top-2 left-24 -z-[1]"
+					className="hidden lg:inline-block w-20 h-20 absolute top-2 left-1/4 -z-[1]"
 				/>
 				<img
 					src={CriteriaImage}
 					loading="lazy"
 					alt="judging criteria"
-					className="w-4/5 py-6 aspect-square flex"
+					className="w-4/5 py-6 mx-auto aspect-square flex"
 				/>
 				<img
 					src={Star}
 					alt=""
 					aria-hidden
 					loading="lazy"
-					className="inline-block opacity-40 absolute right-1/2 bottom-1/2"
+					className="inline-block opacity-40 h-4 lg:h-10 absolute right-1/2 bottom-1/2 animate-pulse transition-all duration-200"
 				/>
 				<img
 					src={Star}
 					alt=""
 					aria-hidden
 					loading="lazy"
-					className="inline-block absolute right-20 bottom-2"
+					className="inline-block absolute h-4 lg:h-10 right-20 bottom-2 animate-pulse transition-all duration-200"
 				/>
 			</div>
-			<div className="w-full flex flex-col gap-3 relative text-sm">
+			<div className="w-full flex flex-col gap-3 relative text-xs text-center md:text-sm font-thin lg:text-left">
 				<h4 className="text-2xl text-center font-bold leading-3 lg:text-left">
 					Judging Criteria
 				</h4>
@@ -96,7 +99,18 @@ export default function CritieriaSection() {
 					APIs, and any other competition-specific requirements.
 				</p>
 
-				<PrimaryBtn text={'learn more'} link={'/'} extraStyles={'w-fit'} />
+				<PrimaryBtn
+					text={'learn more'}
+					link={'/'}
+					extraStyles={'w-fit mx-auto lg:ml-0'}
+				/>
+				<img
+					src={Star}
+					alt=""
+					aria-hidden
+					loading="lazy"
+					className="inline-block absolute h-4 lg:h-10 right-2 bottom-0 animate-pulse transition-all duration-200"
+				/>
 			</div>
 		</section>
 	)
