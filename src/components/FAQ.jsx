@@ -8,72 +8,18 @@ import FaqImage from '../assets/images/faq.png'
 
 export default function FAQSection() {
 	return (
-		<section className="w-full flex items-center justify-center border-b border-primary-border">
-			<article className="w-[90%] mx-auto flex flex-col gap-4 items-center justify-center px-24 py-10 lg:flex-row-reverse lg:gap-0 lg:pt-20 relative">
-				<div className="w-full flex relative">
-					<img
-						src={QuestionMark}
-						loading="lazy"
-						alt=""
-						aria-hidden
-						className="w-24 h-24 relative inline-block -top-16 left-[20%]"
-					/>
-					<img
-						src={QuestionMark2}
-						loading="lazy"
-						alt=""
-						aria-hidden
-						className="w-24 h-24 absolute inline-block -top-28 left-[36%]"
-					/>
-					<img
-						src={QuestionMark3}
-						loading="lazy"
-						alt=""
-						aria-hidden
-						className="w-24 h-24 absolute inline-block -top-16 right-28"
-					/>
-					<img
-						src={FaqImage}
-						loading="lazy"
-						alt="frequently asked questions"
-						className="w-full aspect-square"
-					/>
-					<img
-						src={PurpleStar}
-						alt=""
-						aria-hidden
-						loading="lazy"
-						className="inline-block w-4 absolute top-24 left-1/4"
-					/>
-					<img
-						src={PurpleStar}
-						alt=""
-						aria-hidden
-						loading="lazy"
-						className="inline-block w-4 absolute top-0 right-[40%]"
-					/>
-					<img
-						src={Star}
-						alt=""
-						aria-hidden
-						loading="lazy"
-						className="inline-block h-8 opacity-40 absolute bottom-56 left-20"
-					/>
-					<img
-						src={Star}
-						alt=""
-						aria-hidden
-						loading="lazy"
-						className="inline-block absolute -bottom-6 -right-6"
-					/>
-				</div>
+		<section
+			className="w-full flex items-center justify-center border-b border-primary-border"
+			aria-description="frequently asked questions"
+		>
+			<article className="w-[90%] mx-auto flex flex-col gap-4 items-center justify-center p-8 lg:px-24 py-10 lg:flex-row lg:pt-20 relative 2xl:max-w-[80%]">
 				<div className="w-full flex flex-col gap-3 relative">
 					<img
 						src={PurpleStar}
 						alt=""
 						aria-hidden
 						loading="lazy"
-						className="inline-block w-8 mb-6 relative -left-6 top-2"
+						className="inline-block w-4 lg:w-8 mb-6 relative -left-6 top-2"
 					/>
 					<h4 className="text-2xl text-center font-bold lg:text-left">
 						Frequently Asked
@@ -169,6 +115,63 @@ export default function FAQSection() {
 							</p>
 						</details>
 					</div>
+				</div>
+				<div className="w-full flex flex-col items-center justify-center relative mt-10 lg:mt-0">
+					<img
+						src={QuestionMark}
+						loading="lazy"
+						alt=""
+						aria-hidden
+						className="w-16 h-16 md:w-24 md:h-24 lg:w-16 lg:h-16 xl:w-24 xl:h-24 relative inline-block top-4 left-1 xl:top-6 md:-left-3 md:top-8"
+					/>
+					<img
+						src={QuestionMark2}
+						loading="lazy"
+						alt=""
+						aria-hidden
+						className="w-16 h-16 md:w-24 md:h-24 lg:w-16 lg:h-16 xl:w-24 xl:h-24 absolute inline-block -top-1 left-16 md:left-[30%] md:top-2 lg:left-20 xl:left-32 2xl:left-[30%]"
+					/>
+					<img
+						src={QuestionMark3}
+						loading="lazy"
+						alt=""
+						aria-hidden
+						className="w-16 h-16 md:w-24 md:h-24 lg:w-16 lg:h-16 xl:w-24 xl:h-24 absolute inline-block top-4 left-4 md:left-[20%] lg:left-10 md:top-10 xl:top-6 xl:left-16 2xl:top-10 2xl:left-[20%]"
+					/>
+					<img
+						src={FaqImage}
+						loading="lazy"
+						alt="frequently asked questions"
+						className="w-full md:w-3/4 mx-auto lg:w-full aspect-square"
+					/>
+					<img
+						src={PurpleStar}
+						alt=""
+						aria-hidden
+						loading="lazy"
+						className="inline-block w-4 absolute left-0 lg:top-1/3 lg:left-10 animate-pulse transition-all duration-200"
+					/>
+					<img
+						src={PurpleStar}
+						alt=""
+						aria-hidden
+						loading="lazy"
+						className="inline-block w-4 absolute -top-6 right-1/4 lg:top-0 lg:right-[40%] animate-pulse transition-all duration-200"
+					/>
+					<img
+						src={Star}
+						alt=""
+						aria-hidden
+						loading="lazy"
+						className="hidden md:inline-block h-8 opacity-40 absolute left-0 bottom-56 lg:left-20 animate-pulse transition-all duration-200"
+					/>
+					<img
+						src={Star}
+						alt=""
+						aria-hidden
+						loading="lazy"
+						className="h-8 inline-block absolute -bottom-6 -right-6 animate-pulse transition-all duration-200"
+					/>
 				</div>
 			</article>
 		</section>
