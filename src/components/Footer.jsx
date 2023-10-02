@@ -11,22 +11,27 @@ import TwitterIcon from '../assets/icons/twitter.svg'
 
 export default function Footer() {
 	return (
-		<footer className="flex flex-col items-center justify-center gap-6 text-base font-light p-16 relative">
+		<footer
+			className="flex flex-col items-center justify-center gap-6 text-base font-light p-10 lg:p-16 relative"
+			aria-description="footer"
+		>
 			<img
 				src={Star}
 				alt=""
 				aria-hidden
-				className="inline-block w-6 left-24 top-24 absolute"
+				loading="lazy"
+				className="inline-block w-3 lg:w-6 left-1 lg:left-16 top-24 absolute animate-pulse transition-all duration-200"
 			/>
 			<img
 				src={Star}
 				alt=""
 				aria-hidden
-				className="inline-block opacity-40 w-4 right-1/3 top-24 absolute"
+				loading="lazy"
+				className="inline-block opacity-40 w-4 top-1/2 right-1/3 lg:top-24 absolute md:right-1/2 lg:right-1/3 animate-pulse transition-all duration-200"
 			/>
-			<article className="flex flex-col md:flex-row gap-6 flex-wrap  justify-evenly w-full relative">
-				<section className="flex flex-col items-start justify-start w-1/4">
-					<img src={Logo} alt="getlinked" className="h-6" />
+			<article className="flex flex-col md:flex-row gap-10 flex-wrap  justify-evenly w-full relative">
+				<section className="flex flex-col items-start justify-start w-full lg:w-1/4">
+					<img src={Logo} alt="getlinked" loading="lazy" className="h-6" />
 
 					<p className="text-base font-light my-4">
 						Getlinked Tech Hackathon is a technology innovation program
@@ -34,16 +39,19 @@ export default function Footer() {
 						young and talented individuals in the field of technology
 					</p>
 
-					<div className="mt-8 p-2 flex text-base font-light">
-						<Link to={'#'} className="pr-2 border-r-2 border-primary-light">
+					<div className="mt-8 p-2 flex w-max text-base font-light">
+						<Link
+							to={'#'}
+							className="pr-2 border-r-2 border-primary-light inline-block"
+						>
 							Terms of Use
 						</Link>
-						<Link to={'#'} className="pl-2">
+						<Link to={'#'} className="pl-2 inline-block">
 							Privacy Policy
 						</Link>
 					</div>
 				</section>
-				<section className="flex flex-col gap-2">
+				<section className="flex flex-col lg:gap-2">
 					<h4 className="text-xl font-bold lg:text-left text-primary">
 						Useful Links
 					</h4>
@@ -72,6 +80,7 @@ export default function Footer() {
 							<img
 								src={InstagramIcon}
 								alt="follow us on Instagram"
+								loading="lazy"
 								title="Follow us on Instagram"
 							/>
 						</a>
@@ -83,6 +92,7 @@ export default function Footer() {
 							<img
 								src={TwitterIcon}
 								alt="follow us on Twitter (X)"
+								loading="lazy"
 								title="Follow us on Twitter (X)"
 							/>
 						</a>
@@ -94,6 +104,7 @@ export default function Footer() {
 							<img
 								src={FacebookIcon}
 								alt="follow us on Facebook"
+								loading="lazy"
 								title="Follow us on Facebook"
 							/>
 						</a>
@@ -105,6 +116,7 @@ export default function Footer() {
 							<img
 								src={LinkedinIcon}
 								alt="follow us on LinkedIn"
+								loading="lazy"
 								title="Follow us on LinkedIn"
 							/>
 						</a>
@@ -115,11 +127,11 @@ export default function Footer() {
 						Contact Us
 					</h4>
 					<div className="flex items-center gap-4">
-						<img src={PhoneIcon} alt="tel" />
+						<img src={PhoneIcon} alt="tel" loading="lazy" />
 						<a href="tel:+2346707653444">+234 6707653444</a>
 					</div>
 					<div className="flex items-baseline gap-4">
-						<img src={LocationIcon} alt="tel" />
+						<img src={LocationIcon} alt="address" loading="lazy" />
 						<p>
 							27,Alara Street <br />
 							Yaba 100012
@@ -134,14 +146,16 @@ export default function Footer() {
 			<img
 				src={PurpleStar}
 				alt=""
+				loading="lazy"
 				aria-hidden
-				className="inline-block w-4 right-[51%] bottom-24 absolute"
+				className="inline-block w-4 right-[51%] bottom-24 absolute animate-pulse transition-all duration-200"
 			/>
 			<img
 				src={Star}
 				alt=""
+				loading="lazy"
 				aria-hidden
-				className="inline-block w-4 right-16 bottom-40 absolute"
+				className="inline-block w-4 right-16 bottom-40 absolute animate-pulse transition-all duration-200"
 			/>
 		</footer>
 	)
