@@ -9,9 +9,14 @@ import WisperLogo from '../assets/icons/wisper-logo.png'
 
 export default function PartnersSection() {
 	return (
-		<section className="w-full flex flex-col items-center justify-center gap-16 relative py-16">
-			<div className="w-[40%] text-center">
-				<h3 className="text-2xl font-bold mb-4">Partners and Sponsors</h3>
+		<section
+			className="w-full flex flex-col items-center justify-center gap-16 relative py-16"
+			aria-describedby="partners-heading"
+		>
+			<div className="w-4/5 mx-auto md:w-[40%] text-center">
+				<h3 className="text-2xl font-bold mb-4" id="partners-heading">
+					Partners and Sponsors
+				</h3>
 				<p className="text-base fon-thin leading-6">
 					Getlinked Hackathon 1.0 is honored to have the following major
 					companies as its partners and sponsors
@@ -22,24 +27,24 @@ export default function PartnersSection() {
 				alt=""
 				aria-hidden
 				loading="lazy"
-				className="inline-block w-6 h-6 absolute top-48 left-[15%]"
+				className="inline-block w-4 h-4 md:w-6 md:h-6 absolute top-48 left-[15%]"
 			/>
 
-			<article className="w-4/5 px-40 py-28 relative grid grid-cols-3 items-center justify-center rounded border border-primary-light bg-[rgba(255,255,255,0.01)]">
-				<div className="w-full h-[10rem] flex items-center justify-center object-contain object-center p-10 box-item-1">
+			<article className="w-[90%] mx-auto px-6 py-6 relative grid grid-cols-3 items-center justify-center rounded border border-primary-light bg-[rgba(255,255,255,0.01)] md:max-w-md lg:max-w-[80%] lg:px-40 lg:py-28">
+				<div className="w-full h-24 flex items-center justify-center  p-6 box-item-1">
 					<img
 						src={LibertyLogo}
 						alt="liberty  company logo"
 						title="Liberty"
-						className="inline-block h-full"
+						className="inline-block object-contain object-center h-full mx-auto"
 					/>
 				</div>
-				<div className="w-full h-[10rem] flex items-center justify-center object-contain object-center p-10 box-item-2">
+				<div className="w-full h-24 flex items-center justify-center p-6 box-item-2">
 					<img
 						src={LibertyPayLogo}
 						alt="liberty pay company logo"
 						title="LibertyPay"
-						className="inline-block"
+						className="inline-block object-contain object-center h-full mx-auto"
 					/>
 				</div>
 
@@ -48,42 +53,42 @@ export default function PartnersSection() {
 					alt=""
 					aria-hidden
 					loading="lazy"
-					className="inline-block w-6 h-6 absolute top-16 right-[41%]"
+					className="inline-block w-4 h-4 md:w-6 md:h-6 absolute top-2 right-[90%] lg:top-16 lg:right-[41%]"
 				/>
 
-				<div className="w-full h-[10rem] flex items-center justify-center object-contain object-center p-10">
+				<div className="w-full h-24 flex items-center justify-center p-6">
 					<img
 						src={WinwiseLogo}
 						alt="winwise company logo"
 						title="WinWise"
-						className="inline-block h-full"
+						className="inline-block h-full object-contain object-center mx-auto"
 					/>
 				</div>
 
-				<div className="w-full h-[10rem] flex items-center justify-center object-contain object-center p-10 box-right">
+				<div className="w-full h-24 flex items-center justify-center p-6 box-right">
 					<img
 						src={WisperLogo}
 						alt="Wispersms company logo"
 						title="Wispersms"
-						className="inline-block h-full"
+						className="inline-block h-full object-contain object-center mx-auto"
 					/>
 				</div>
 
-				<div className="w-full h-[10rem] flex items-center justify-center object-contain  p-10">
+				<div className="w-full h-24 flex items-center p-6">
 					<img
 						src={PayboxLogo}
 						alt="paybox company logo"
 						title="Paybox"
-						className="w-full h-auto"
+						className="h-full justify-center object-contain mx-auto"
 					/>
 				</div>
 
-				<div className="w-full h-[10rem] flex items-center justify-center object-contain object-center p-10 box-top-left">
+				<div className="w-full h-24 flex items-center justify-center p-6 box-top-left">
 					<img
 						src={VuzualLogo}
 						alt="vuzual company logo"
 						title="Vuzual"
-						className="inline-block my-auto"
+						className="inline-block object-contain object-center h-full mx-auto"
 					/>
 				</div>
 
@@ -92,7 +97,8 @@ export default function PartnersSection() {
 					alt=""
 					aria-hidden
 					loading="lazy"
-					className="inline-block w-6 h-6 absolute bottom-10 right-[40%]"
+					className="inline-block w-4
+					h-4 md:w-6 md:h-6 absolute right-[10%] bottom-2 lg:bottom-10 lg:right-[40%]"
 				/>
 			</article>
 		</section>

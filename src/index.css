@@ -97,15 +97,15 @@ a:link {
 .box-item-1::before {
 	height: 2px;
 	bottom: 0;
-	right: 2rem;
+	right: 1rem;
 	left: 0;
 }
 /* horizontal */
 .box-item-2::before {
 	height: 2px;
 	bottom: 0;
-	right: 2rem;
-	left: 2rem;
+	right: 1rem;
+	left: 1rem;
 }
 /* vertical */
 .box-item-1::after,
@@ -113,21 +113,21 @@ a:link {
 	width: 2px;
 	right: 0;
 	top: 0;
-	bottom: 2rem;
+	bottom: 1rem;
 }
 /* vertical */
 .box-right::after {
 	width: 2px;
 	right: 0;
 	bottom: 0;
-	top: 2rem;
+	top: 1rem;
 }
 
 /* vertical */
 .box-top-left::after {
 	width: 2px;
 	bottom: 0;
-	top: 2rem;
+	top: 1rem;
 	left: 0;
 }
 
@@ -136,7 +136,7 @@ a:link {
 	height: 2px;
 	top: 0;
 	right: 0;
-	left: 2rem;
+	left: 1rem;
 }
 
 /* .glow-bg::before {
