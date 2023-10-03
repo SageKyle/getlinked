@@ -2,9 +2,9 @@ import ChainIcon from '../assets/icons/chain.svg'
 import FireIcon from '../assets/icons/fire.svg'
 // import LightbulbIcon from '../assets/icons/lightbulb.svg'
 import PurpleLine from '../assets/icons/purple-underline.png'
-// import TitleImage from '../assets/images/getlinked-title.png'
 import HeroImage from '../assets/images/hackathon-guy.png'
 import useCountdownTimer from '../hooks/useCountdown'
+import TypewriterEffect from '../utils/TypewritterEffect'
 import PrimaryBtn from './PrimaryBtn'
 
 export default function Hero() {
@@ -13,17 +13,17 @@ export default function Hero() {
 
 	return (
 		<article className="w-full flex flex-col items-center justify-end gap-4 lg:items-end lg:justify-end pt-6 h-auto lg:h-[calc(100vh-8rem)] border-b-2 border-primary-border relative">
-			<h2 className="w-4/5 text-center text-xl mx-auto lg:w-fit lg:mr-10 mb-auto mt-8 lg:text-3xl lg:ml-auto">
-				Igniting a revolution in{' '}
-				<span className="inline-block relative">
-					HR Innovation
-					<img
-						src={PurpleLine}
-						aria-hidden
-						className="inline-block absolute right-0 left-0 -bottom-1 "
-						alt=""
-					/>
-				</span>
+			<h2 className=" text-center text-base mx-auto w-fit h-5 lg:h-10 lg:mr-10 mb-auto mt-8 lg:text-3xl lg:ml-auto relative">
+				<TypewriterEffect
+					textToDisplay={'Igniting a Revolution in HR innovation'}
+				/>
+
+				<img
+					src={PurpleLine}
+					aria-hidden
+					className="inline-block absolute w-[40%] right-0 left-auto -bottom-1 "
+					alt=""
+				/>
 			</h2>
 			<section className="w-full h-auto px-6 mt-6 pb-0 lg:h-[90%] flex flex-col items-end justify-end lg:justify-center lg:grid lg:grid-cols-[auto_45%] lg:pb-0 lg:px-10">
 				<div className="w-full h-auto lg:h-full">
