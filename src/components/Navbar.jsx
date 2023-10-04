@@ -4,7 +4,7 @@ import CloseNav from '../assets/icons/close-nav.svg'
 import Hamburger from '../assets/icons/hamburger.svg'
 import Logo from '../assets/icons/logo.svg'
 import BGGlow from '../assets/images/purple-lens-flare.png'
-import PrimaryBtn from './PrimaryBtn'
+import PrimaryBtn from '../utils/PrimaryBtn'
 
 export default function Navbar() {
 	const [showNav, toggleShowNav] = useState(false)

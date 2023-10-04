@@ -3,7 +3,7 @@ import PurpleStar from '../assets/icons/purple-star.png'
 import Star from '../assets/icons/star.svg'
 import PolicyImage from '../assets/images/policy-img.png'
 import SecurityImage from '../assets/images/secure.svg'
-import PrimaryBtn from './PrimaryBtn'
+import PrimaryBtn from '../utils/PrimaryBtn'
 
 export default function PolicySection() {
 	return (

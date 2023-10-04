@@ -6,8 +6,8 @@ import PurpleLine from '../assets/icons/purple-underline.png'
 import HeroImage from '../assets/images/hackathon-guy.png'
 import BGGlow from '../assets/images/purple-lens-flare.png'
 import useCountdownTimer from '../hooks/useCountdown'
+import PrimaryBtn from '../utils/PrimaryBtn'
 import TypewriterEffect from '../utils/TypewritterEffect'
-import PrimaryBtn from './PrimaryBtn'
 
 export default function Hero() {
 	const targetDate = new Date('2023-11-18T00:00:00Z')

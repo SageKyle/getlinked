@@ -2,7 +2,7 @@ import Circle from '../assets/icons/circle.svg'
 import PurpleStar from '../assets/icons/purple-star.png'
 import Star from '../assets/icons/star.svg'
 import CriteriaImage from '../assets/images/checking-criteria.png'
-import PrimaryBtn from './PrimaryBtn'
+import PrimaryBtn from '../utils/PrimaryBtn'
 
 export default function CritieriaSection() {
 	return (
