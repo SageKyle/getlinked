@@ -1,6 +1,7 @@
+import { motion } from 'framer-motion'
 import ChainIcon from '../assets/icons/chain.svg'
 import FireIcon from '../assets/icons/fire.svg'
-// import LightbulbIcon from '../assets/icons/lightbulb.svg'
+import LightbulbIcon from '../assets/icons/lightbulb.svg'
 import PurpleLine from '../assets/icons/purple-underline.png'
 import HeroImage from '../assets/images/hackathon-guy.png'
 import useCountdownTimer from '../hooks/useCountdown'
@@ -12,7 +13,7 @@ export default function Hero() {
 	const { timeRemaining } = useCountdownTimer(targetDate)
 
 	return (
-		<article className="w-full flex flex-col items-center justify-end gap-4 lg:items-end lg:justify-end pt-6 h-auto lg:h-[calc(100vh-8rem)] border-b-2 border-primary-border relative">
+		<article className="w-full flex flex-col items-center justify-end gap-4 lg:items-end lg:justify-end pt-6 h-auto lg:h-[calc(100vh-8rem)] border-b-2 border-primary-border relative overflow-x-hidden">
 			<h2 className=" text-center text-base mx-auto w-fit h-5 lg:h-10 lg:mr-10 mb-auto mt-8 lg:text-3xl lg:ml-auto relative">
 				<TypewriterEffect
 					textToDisplay={'Igniting a Revolution in HR innovation'}
@@ -21,19 +22,36 @@ export default function Hero() {
 				<img
 					src={PurpleLine}
 					aria-hidden
-					className="inline-block absolute w-[40%] right-0 left-auto -bottom-1 "
+					className="inline-block absolute w-[38%] right-1 left-auto -bottom-1 "
 					alt=""
 				/>
 			</h2>
 			<section className="w-full h-auto px-6 mt-6 pb-0 lg:h-[90%] flex flex-col items-end justify-end lg:justify-center lg:grid lg:grid-cols-[auto_45%] lg:pb-0 lg:px-10">
 				<div className="w-full h-auto lg:h-full">
-					<h2 className="hero-txt flex flex-col align-bottom justify-end text-4xl md:text-5xl font-bold text-center lg:text-left">
-						{/* TODO add the lightbulb icon <img
+					<motion.h2
+						initial={{ opacity: 0, y: '-100%' }}
+						whileInView={{ opacity: 1, y: 0 }}
+						transition={{ duration: 1 }}
+						layout
+						viewport={{ once: true }}
+						className="hero-txt w-max mx-auto flex flex-col align-bottom justify-end text-4xl md:text-5xl font-bold text-center lg:text-left lg:ml-0"
+					>
+						<motion.img
+							initial={{ scale: 0.3, rotate: '-40deg', y: 50, opacity: 0.2 }}
+							whileInView={{ scale: 1, rotate: '0deg', y: 0, opacity: 1 }}
+							transition={{
+								duration: 2,
+								delay: 1,
+								type: 'spring',
+								stiffness: 300,
+							}}
+							viewport={{ once: true }}
+							layout
 							src={LightbulbIcon}
-							alt="" 
+							alt=""
 							aria-hidden
-							className="h-10 inline-block ml-auto mr-10 lg:mr-60"
-						/> */}
+							className="h-6 w-fit inline-block ml-auto mr-[17%] md:h-8 md:mr-[15%] lg:h-12 lg:mr-[22%]"
+						/>
 						getlinked Tech
 						<br />
 						<span className="flex items-center gap-1 mx-auto lg:ml-0">
@@ -41,11 +59,18 @@ export default function Hero() {
 							<img src={ChainIcon} alt="" aria-hidden className="h-12" />
 							<img src={FireIcon} alt="" aria-hidden className="h-8" />
 						</span>
-					</h2>
-					<p className="my-4 text-base text-center md:my-6 md:w-1/2 md:mx-auto lg:ml-0 lg:w-4/5 lg:text-left">
+					</motion.h2>
+					<motion.p
+						initial={{ opacity: 0, x: '-100%' }}
+						whileInView={{ opacity: 1, x: 0 }}
+						transition={{ duration: 1 }}
+						layout
+						viewport={{ once: true }}
+						className="my-4 text-base text-center md:my-6 md:w-1/2 md:mx-auto lg:ml-0 lg:w-4/5 lg:text-left"
+					>
 						Participate in getlinked tech Hackathon 2023 stand a chance to win a
 						Big prize
-					</p>
+					</motion.p>
 
 					<PrimaryBtn
 						text={'register'}
@@ -53,7 +78,13 @@ export default function Hero() {
 						extraStyles={'mb-8 mx-auto lg:ml-0 flex'}
 					/>
 
-					<div className="countdown w-fit flex gap-4 h-10 mx-auto lg:ml-4 md:mt-auto">
+					<motion.div
+						className="countdown w-fit flex gap-4 h-10 mx-auto lg:ml-4 md:mt-auto"
+						initial={{ opacity: 0, y: '100%' }}
+						whileInView={{ opacity: 1, y: 0 }}
+						transition={{ duration: 1 }}
+						layout
+					>
 						<p>
 							{timeRemaining.days}
 							<span className="font-sans font-thin text-base">d</span>
@@ -70,10 +101,20 @@ export default function Hero() {
 							{timeRemaining.seconds}
 							<span className="font-sans font-thin text-base">s</span>
 						</p>
-					</div>
+					</motion.div>
 				</div>
 				<div className="w-4/5 mx-auto lg:h-full lg:ml-auto object-contain">
-					<img
+					<motion.img
+						initial={{ opacity: 0, x: '100%' }}
+						whileInView={{ opacity: 1, x: 0 }}
+						transition={{
+							duration: 1,
+							stiffness: 500,
+							damping: 50,
+							type: 'spring',
+						}}
+						viewport={{ once: true }}
+						layout
 						src={HeroImage}
 						alt="a man wearing smart glasses touching virtual screen in the background"
 						className="inline-block max-h-[28rem] w-auto lg:h-full"
