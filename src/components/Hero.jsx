@@ -19,7 +19,7 @@ export default function Hero() {
 				src={BGGlow}
 				aria-hidden
 				loading="lazy"
-				className="inline-block absolute w-full top-[5%] -left-10 lg:-top-1/2 lg:left-20 lg:w-3/4"
+				className="inline-block absolute w-full top-[5%] -left-10 lg:-top-1/2 lg:left-20 lg:w-3/4 -z-[1]"
 				alt=""
 			/>
 			<h2 className=" text-center text-base mx-auto w-fit h-5 lg:h-10 lg:mr-10 mb-auto mt-8 lg:text-3xl lg:ml-auto relative">
