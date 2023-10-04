@@ -4,6 +4,7 @@ import FireIcon from '../assets/icons/fire.svg'
 import LightbulbIcon from '../assets/icons/lightbulb.svg'
 import PurpleLine from '../assets/icons/purple-underline.png'
 import HeroImage from '../assets/images/hackathon-guy.png'
+import BGGlow from '../assets/images/purple-lens-flare.png'
 import useCountdownTimer from '../hooks/useCountdown'
 import TypewriterEffect from '../utils/TypewritterEffect'
 import PrimaryBtn from './PrimaryBtn'
@@ -14,6 +15,13 @@ export default function Hero() {
 
 	return (
 		<article className="w-full flex flex-col items-center justify-end gap-4 lg:items-end lg:justify-end pt-6 h-auto lg:h-[calc(100vh-8rem)] border-b-2 border-primary-border relative overflow-x-hidden">
+			<img
+				src={BGGlow}
+				aria-hidden
+				loading="lazy"
+				className="inline-block absolute w-full top-[5%] -left-10 lg:-top-1/2 lg:left-20 lg:w-3/4"
+				alt=""
+			/>
 			<h2 className=" text-center text-base mx-auto w-fit h-5 lg:h-10 lg:mr-10 mb-auto mt-8 lg:text-3xl lg:ml-auto relative">
 				<TypewriterEffect
 					textToDisplay={'Igniting a Revolution in HR innovation'}

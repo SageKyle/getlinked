@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom'
 import CloseNav from '../assets/icons/close-nav.svg'
 import Hamburger from '../assets/icons/hamburger.svg'
 import Logo from '../assets/icons/logo.svg'
+import BGGlow from '../assets/images/purple-lens-flare.png'
 import PrimaryBtn from './PrimaryBtn'
 
 export default function Navbar() {
@@ -11,6 +12,13 @@ export default function Navbar() {
 		<header
 			className={`w-full text-lg justify-between capitalize flex items-center py-8 px-6 lg:px-16 relative border-b border-primary-border`}
 		>
+			<img
+				src={BGGlow}
+				aria-hidden
+				loading="lazy"
+				className="hidden lg:inline-block absolute w-1/2 object-cover top-0 left-[18%]"
+				alt=""
+			/>
 			<NavLink to={'/'}>
 				<img src={Logo} className="inline-block mr-auto" alt="getlinked" />
 			</NavLink>
