@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import ArrowIcon from '../assets/icons/arrow.svg'
 import PurpleStar from '../assets/icons/purple-star.png'
 import Idea from '../assets/images/idea-illustration.png'
@@ -5,10 +6,17 @@ import Idea from '../assets/images/idea-illustration.png'
 export default function IdeaSection() {
 	return (
 		<section
-			className="w-full grid gap-4 items-center justify-center border-b border-primary-border px-8 py-10 lg:grid-cols-2 lg:max-h-[80vh]"
+			className="w-full grid gap-4 items-center justify-center border-b border-primary-border px-8 py-10 lg:grid-cols-2 lg:max-h-[80vh] overflow-hidden"
 			aria-describedby="idea-section"
 		>
-			<div className="w-full pl-6 flex flex-col relative mb-2 md:mb-8 lg:mb-0">
+			<motion.div
+				initial={{ opacity: 0, x: '-100%', rotate: '-60deg' }}
+				whileInView={{ opacity: 1, x: 0, rotate: '0deg' }}
+				transition={{ duration: 1 }}
+				layout
+				viewport={{ once: true }}
+				className="w-full pl-6 flex flex-col relative mb-2 md:mb-8 lg:mb-0"
+			>
 				<img
 					src={PurpleStar}
 					alt=""
@@ -29,8 +37,15 @@ export default function IdeaSection() {
 					loading="lazy"
 					className="inline-block lg:absolute h-10 lg:right-20 bottom-2"
 				/>
-			</div>
-			<div className="w-full flex flex-col gap-2 md:gap-3 relative">
+			</motion.div>
+			<motion.div
+				initial={{ opacity: 0, x: '100%' }}
+				whileInView={{ opacity: 1, x: 0 }}
+				transition={{ duration: 1 }}
+				layout
+				viewport={{ once: true }}
+				className="w-full flex flex-col gap-2 md:gap-3 relative"
+			>
 				<h4
 					className="text-xl md:text-2xl text-center font-bold lg:text-left"
 					id="idea-section"
@@ -55,7 +70,7 @@ export default function IdeaSection() {
 					problems, pushing the boundaries of technology, and creating solutions
 					that can change the world, that&apos;s what we&apos;re all about!
 				</p>
-			</div>
+			</motion.div>
 		</section>
 	)
 }
