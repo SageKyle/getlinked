@@ -3,15 +3,33 @@
 	position: relative;
 	list-style: none;
 }
-@media screen and (min-width: 720px) {
+
+.wrapper li {
+	position: relative;
+}
+
+/* li::before, */
+.sideborder:after {
+	content: '';
+	display: inline-block;
+	background-color: var(--pale-purple);
+	position: absolute;
+	z-index: 1;
+	width: 2px;
+	right: unset;
+	left: -2rem;
+	top: 0;
+	bottom: 4rem;
+	z-index: -1;
+}
+
+@media screen and (min-width: 768px) {
 	.wrapper li {
 		width: 50%;
 		min-height: 10rem;
-		/* margin-bottom: 2rem; */
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
-		position: relative;
 	}
 
 	.wrapper li:nth-child(even) {
@@ -44,15 +62,13 @@
 	}
 
 	/* li::before, */
-	.wrapper li:nth-child(2n + 1)::after {
-		content: '';
-		display: inline-block;
-		background-color: var(--pale-purple);
-		position: absolute;
-		z-index: 1;
-		width: 2px;
+	.sideborder:after {
 		right: 0;
-		top: 0;
-		bottom: 0;
+		left: unset;
+		top: -3rem;
+	}
+
+	.sideborder:nth-child(11):after {
+		bottom: 2.5rem;
 	}
 }
