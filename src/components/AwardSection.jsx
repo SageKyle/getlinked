@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import BronzeMedal from '../assets/icons/bronze_medal.svg'
 import GoldMedal from '../assets/icons/gold_medal.svg'
 import PurpleStar from '../assets/icons/purple-star.png'
@@ -51,7 +52,13 @@ export default function AwardSection() {
 					className="inline-block h-4 absolute right-6 -top-8 lg:right-1/2 lg:h-8 lg:-top-16 animate-pulse transition-all duration-200"
 				/>
 				<div className="w-full p-8 pl-10 mb-auto flex items-start justify-center relative lg:my-auto ">
-					<img
+					<motion.img
+						initial={{ opacity: 0, scale: 0.5 }}
+						whileInView={{ opacity: 1, scale: 1 }}
+						transition={{
+							duration: 1,
+						}}
+						layout
 						src={Award}
 						loading="lazy"
 						alt="award illustration"
@@ -67,7 +74,14 @@ export default function AwardSection() {
 						className="inline-block h-4 absolute right-4 lg:-right-4 top-0 lg:h-8 animate-pulse transition-all duration-200"
 					/>
 					{/* Silver Medal */}
-					<div className="w-full min-h-[10rem] flex flex-col items-center justify-end gap-2 p-6 rounded-lg border border-primary-light bg-[rgba(212,52,254,0.12)] relative md:min-h-[12rem]">
+					<motion.div
+						initial={{ opacity: 0, x: '100%' }}
+						whileInView={{ opacity: 1, x: 0 }}
+						transition={{
+							duration: 1,
+						}}
+						className="w-full min-h-[10rem] flex flex-col items-center justify-end gap-2 p-6 rounded-lg border border-primary-light bg-[rgba(212,52,254,0.12)] relative md:min-h-[12rem]"
+					>
 						<img
 							src={SilverMedal}
 							alt="silver medal"
@@ -80,9 +94,17 @@ export default function AwardSection() {
 						<h5 className="font-bold text-base sm:text-2xl text-primary-light">
 							N300,000
 						</h5>
-					</div>
+					</motion.div>
 					{/* Gold Medal */}
-					<div className="w-full min-h-[11rem] flex flex-col items-center justify-end gap-2 p-6 rounded-lg border border-[#903AFF] bg-[rgba(144,58,255,0.12)] -top-6 md:min-h-[14rem]">
+					<motion.div
+						initial={{ opacity: 0, x: '100%' }}
+						whileInView={{ opacity: 1, x: 0 }}
+						transition={{
+							duration: 1,
+							delay: 0.4,
+						}}
+						className="w-full min-h-[11rem] flex flex-col items-center justify-end gap-2 p-6 rounded-lg border border-[#903AFF] bg-[rgba(144,58,255,0.12)] -top-6 md:min-h-[14rem]"
+					>
 						<img
 							src={GoldMedal}
 							alt="gold medal"
@@ -95,9 +117,17 @@ export default function AwardSection() {
 						<h5 className="font-bold text-base sm:text-2xl text-primary">
 							N400,000
 						</h5>
-					</div>
+					</motion.div>
 					{/* Bronze Medal */}
-					<div className="w-full min-h-[10rem] flex flex-col items-center justify-end gap-2 p-6 rounded-lg border border-primary-light bg-[rgba(212,52,254,0.12)] relative md:min-h-[12rem]">
+					<motion.div
+						initial={{ opacity: 0, x: '100%' }}
+						whileInView={{ opacity: 1, x: 0 }}
+						transition={{
+							duration: 1,
+							delay: 0.8,
+						}}
+						className="w-full min-h-[10rem] flex flex-col items-center justify-end gap-2 p-6 rounded-lg border border-primary-light bg-[rgba(212,52,254,0.12)] relative md:min-h-[12rem]"
+					>
 						<img
 							src={BronzeMedal}
 							alt="bronze medal"
@@ -110,7 +140,7 @@ export default function AwardSection() {
 						<h5 className="font-bold text-base sm:text-2xl text-primary-light">
 							N150,000
 						</h5>
-					</div>
+					</motion.div>
 					<img
 						src={Star}
 						alt=""

@@ -1,10 +1,10 @@
+import { motion } from 'framer-motion'
 import PurpleStar from '../assets/icons/purple-star.png'
 import QuestionMark from '../assets/icons/question-mark-1.svg'
 import QuestionMark2 from '../assets/icons/question-mark-2.svg'
 import QuestionMark3 from '../assets/icons/question-mark-3.svg'
 import Star from '../assets/icons/star.svg'
 import FaqImage from '../assets/images/faq.png'
-// import GlowImage from '../assets/images/purple-lens-flare.svg'
 
 export default function FAQSection() {
 	return (
@@ -117,28 +117,57 @@ export default function FAQSection() {
 					</div>
 				</div>
 				<div className="w-full flex flex-col items-center justify-center relative mt-10 lg:mt-0">
-					<img
+					<motion.img
+						initial={{ opacity: 0, y: '-150%' }}
+						whileInView={{ opacity: 1, y: 0 }}
+						transition={{
+							duration: 1,
+							delay: 0.1,
+						}}
+						layout
 						src={QuestionMark}
 						loading="lazy"
 						alt=""
 						aria-hidden
 						className="w-16 h-16 md:w-24 md:h-24 lg:w-16 lg:h-16 xl:w-24 xl:h-24 relative inline-block top-4 left-1 xl:top-6 md:-left-3 md:top-8"
 					/>
-					<img
+					<motion.img
+						initial={{ opacity: 0, y: '-150%' }}
+						whileInView={{ opacity: 1, y: 0 }}
+						transition={{
+							duration: 1,
+							delay: 0.5,
+						}}
+						layout
 						src={QuestionMark2}
 						loading="lazy"
 						alt=""
 						aria-hidden
 						className="w-16 h-16 md:w-24 md:h-24 lg:w-16 lg:h-16 xl:w-24 xl:h-24 absolute inline-block -top-1 left-16 md:left-[30%] md:top-2 lg:left-20 xl:left-32 2xl:left-[30%]"
 					/>
-					<img
+					<motion.img
+						initial={{ opacity: 0, y: '-150%' }}
+						whileInView={{ opacity: 1, y: 0 }}
+						transition={{
+							duration: 1,
+							delay: 0.8,
+						}}
+						layout
 						src={QuestionMark3}
 						loading="lazy"
 						alt=""
 						aria-hidden
 						className="w-16 h-16 md:w-24 md:h-24 lg:w-16 lg:h-16 xl:w-24 xl:h-24 absolute inline-block top-4 left-4 md:left-[20%] lg:left-10 md:top-10 xl:top-6 xl:left-16 2xl:top-10 2xl:left-[20%]"
 					/>
-					<img
+					<motion.img
+						initial={{ opacity: 0, x: '100%' }}
+						whileInView={{ opacity: 1, x: 0 }}
+						animate={{ x: 100 }}
+						transition={{
+							duration: 1,
+							delay: 0.9,
+						}}
+						layout
 						src={FaqImage}
 						loading="lazy"
 						alt="frequently asked questions"

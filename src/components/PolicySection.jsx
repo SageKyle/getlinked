@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import Checkmark from '../assets/icons/checkmark.svg'
 import PurpleStar from '../assets/icons/purple-star.png'
 import Star from '../assets/icons/star.svg'
@@ -20,21 +21,66 @@ export default function PolicySection() {
 					loading="lazy"
 					className="inline-block opacity-40 w-3 lg:w-6 absolute right-6 -top-8 lg:right-1/2 lg:-top-10 animate-pulse transition-all duration-200"
 				/>
-				<h4 className="text-2xl text-center font-bold lg:text-left 2xl:text-3xl">
+				<motion.h4
+					initial={{ opacity: 0, x: '-100%' }}
+					whileInView={{ opacity: 1, x: 0 }}
+					transition={{
+						duration: 1,
+						delay: 0.1,
+					}}
+					layout
+					className="text-2xl text-center font-bold lg:text-left 2xl:text-3xl"
+				>
 					Privacy Policy and
-				</h4>
-				<h4 className="text-2xl text-center font-bold lg:text-left text-primary 2xl:text-3xl">
+				</motion.h4>
+				<motion.h4
+					initial={{ opacity: 0, x: '-100%' }}
+					whileInView={{ opacity: 1, x: 0 }}
+					transition={{
+						duration: 1,
+						delay: 0.3,
+					}}
+					layout
+					className="text-2xl text-center font-bold lg:text-left text-primary 2xl:text-3xl"
+				>
 					Terms
-				</h4>
+				</motion.h4>
 
-				<p className="text-base font-light my-4 2xl:text-xl">
+				<motion.p
+					initial={{ opacity: 0, x: '-100%' }}
+					whileInView={{ opacity: 1, x: 0 }}
+					transition={{
+						duration: 1,
+						delay: 0.4,
+					}}
+					layout
+					className="text-base font-light my-4 2xl:text-xl"
+				>
 					Last updated on September 12, 2023
-				</p>
-				<p className="text-base font-light my-3 2xl:text-xl">
+				</motion.p>
+				<motion.p
+					initial={{ opacity: 0, x: '-100%' }}
+					whileInView={{ opacity: 1, x: 0 }}
+					transition={{
+						duration: 1,
+						delay: 0.5,
+					}}
+					layout
+					className="text-base font-light my-3 2xl:text-xl"
+				>
 					Below are our privacy & policy, which outline a lot of goodies. <br />
 					it&apos;s our aim to always take of our participant
-				</p>
-				<div className="w-[90%] flex flex-col gap-4 p-6 mx-auto my-6 border border-primary-light bg-[rgba(217,217,217,0.03)] rounded lg:w-full">
+				</motion.p>
+				<motion.div
+					initial={{ opacity: 0, x: '-100%' }}
+					whileInView={{ opacity: 1, x: 0 }}
+					transition={{
+						duration: 1,
+						delay: 0.6,
+					}}
+					layout
+					className="w-[90%] flex flex-col gap-4 p-6 mx-auto my-6 border border-primary-light bg-[rgba(217,217,217,0.03)] rounded lg:w-full"
+				>
 					<p className="text-xs sm:text-base font-light leading-8 my-3 2xl:text-xl">
 						At getlinked tech Hackathon 1.0, we value your privacy and are
 						committed to protecting your personal information. This Privacy
@@ -69,7 +115,7 @@ export default function PolicySection() {
 					<div className="w-fit mx-auto">
 						<PrimaryBtn text={'read more'} link={'/'} extraStyles={'px-8'} />
 					</div>
-				</div>
+				</motion.div>
 				<img
 					src={PurpleStar}
 					alt=""
@@ -93,14 +139,27 @@ export default function PolicySection() {
 					loading="lazy"
 					className="inline-block w-4 absolute -top-4 right-[20%] lg:-top-[12%] animate-pulse transition-all duration-200"
 				/>
-				<img
+				<motion.img
+					initial={{ opacity: 0, y: '60%' }}
+					whileInView={{ opacity: 1, y: 0 }}
+					transition={{
+						duration: 1,
+					}}
+					layout
 					src={SecurityImage}
 					loading="lazy"
 					alt=""
 					aria-hidden
 					className="w-4/5 h-auto absolute inline-block top-4 lg:-top-[35%] xl:-top-[10%] 2xl:w-2/3 2xl:-top-28"
 				/>
-				<img
+				<motion.img
+					initial={{ opacity: 0, y: '80%' }}
+					whileInView={{ opacity: 1, y: 0 }}
+					transition={{
+						duration: 1,
+						delay: 0.3,
+					}}
+					layout
 					src={PolicyImage}
 					loading="lazy"
 					alt="privacy policy"
