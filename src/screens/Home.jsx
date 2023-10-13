@@ -11,7 +11,7 @@ import TimelineSection from '../components/TimelineSection'
 
 export default function Home() {
 	return (
-		<section className="relative">
+		<section className="relative overflow-x-hidden">
 			<Hero />
 			<IdeaSection />
 			<RulesSection />

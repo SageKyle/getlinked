@@ -2,6 +2,7 @@ import Checkmark from '../assets/icons/checkmark.svg'
 import PurpleStar from '../assets/icons/purple-star.png'
 import Star from '../assets/icons/star.svg'
 import PolicyImage from '../assets/images/policy-img.png'
+import BGGlow from '../assets/images/purple-lens-flare.png'
 import SecurityImage from '../assets/images/secure.svg'
 import PrimaryBtn from '../utils/PrimaryBtn'
 
@@ -127,6 +128,13 @@ export default function PolicySection() {
 					className="inline-block opacity-40 w-4 lg:w-8 absolute right-4 bottom-[28%] animate-pulse transition-all duration-200"
 				/>
 			</div>
+			<img
+				src={BGGlow}
+				loading="lazy"
+				alt=""
+				aria-hidden
+				className="w-full absolute hidden md:inline-block [transform:rotate(-90deg)] -z-[1] md:-bottom-10 md:-left-52 lg:-bottom-1 lg:-left-1/4 lg:w-4/5 lg:opacity-60"
+			/>
 		</section>
 	)
 }

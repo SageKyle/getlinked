@@ -2,7 +2,7 @@ import Styles from '../assets/styles/Timeline.module.css'
 
 export default function TimelineSection() {
 	return (
-		<section className="w-full p-8 lg:p-16">
+		<section className="w-full p-8 lg:p-16" id="timeline">
 			<div className="w-4/5 max-w-sm mx-auto my-10 text-center">
 				<h4 className="text-2xl font-bold">Timeline</h4>
 				<p className="text-base font-light">
@@ -216,7 +216,9 @@ export default function TimelineSection() {
 						5
 					</div>
 				</li>
-				<li className={`ml-14 md:ml-0 ${Styles.sideborder}`}>
+				<li
+					className={`ml-14 md:ml-0 bg-[#150e28] drop-shadow-md ${Styles.sideborder}`}
+				>
 					<h5 className="text-lg md:text-2xl font-bold md:text-right text-primary md:hidden">
 						Demo day
 					</h5>
@@ -238,7 +240,10 @@ export default function TimelineSection() {
 				</li>
 
 				{/* copy of above */}
-				<li className="hidden md:block" aria-hidden>
+				<li
+					className="hidden md:block relative bg-[#150e28] drop-shadow-md z-[-1]"
+					aria-hidden
+				>
 					<h5 className="text-2xl font-bold md:text-right text-primary">
 						Demo day
 					</h5>

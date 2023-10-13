@@ -2,12 +2,13 @@ import Circle from '../assets/icons/circle.svg'
 import PurpleStar from '../assets/icons/purple-star.png'
 import Star from '../assets/icons/star.svg'
 import CriteriaImage from '../assets/images/checking-criteria.png'
+import BGGlow from '../assets/images/purple-lens-flare.png'
 import PrimaryBtn from '../utils/PrimaryBtn'
 
 export default function CritieriaSection() {
 	return (
 		<section
-			className="w-full grid gap-4 items-center justify-center border-b border-primary-border px-8 lg:px-24 py-14 lg:grid-cols-2"
+			className="w-full grid gap-4 items-center justify-center border-b border-primary-border px-8 lg:px-24 py-14 lg:grid-cols-2 relative"
 			aria-description="judging criteria and key attributes"
 		>
 			<div className="w-full lg:pl-10 flex relative">
@@ -17,6 +18,13 @@ export default function CritieriaSection() {
 					aria-hidden
 					loading="lazy"
 					className="inline-block absolute h-4 -top-8 left-1/2 lg:-top-16 lg:left-32 lg:h-10 animate-pulse transition-all duration-200"
+				/>
+				<img
+					src={BGGlow}
+					alt=""
+					aria-hidden
+					loading="lazy"
+					className="inline-block absolute w-full top-20 -left-20 -z-[1] opacity-60 [transform:rotate(-90deg)] lg:top-32 lg:-left-20 lg:opacity-90 lg:[transform:rotate(180deg)]"
 				/>
 				<img
 					src={Circle}
@@ -112,6 +120,13 @@ export default function CritieriaSection() {
 					className="inline-block absolute h-4 lg:h-10 right-2 bottom-0 animate-pulse transition-all duration-200"
 				/>
 			</div>
+			<img
+				src={BGGlow}
+				alt=""
+				aria-hidden
+				loading="lazy"
+				className="inline-block absolute w-full bottom-20 -right-1/3 -z-[1] opacity-60 [transform:rotate(90deg)] md:-bottom-6 lg:-bottom-2/3 lg:-right-[15%] lg:opacity-70 lg:w-3/4"
+			/>
 		</section>
 	)
 }

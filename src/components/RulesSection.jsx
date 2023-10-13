@@ -1,5 +1,5 @@
 import Star from '../assets/icons/star.svg'
-import GlowImage from '../assets/images/purple-lens-flare.svg'
+import BGGlow from '../assets/images/purple-lens-flare.png'
 import RulesImage from '../assets/images/solving-puzzle.png'
 
 export default function RulesSection() {
@@ -9,11 +9,11 @@ export default function RulesSection() {
 			aria-description="rules and regulations"
 		>
 			<img
-				src={GlowImage}
+				src={BGGlow}
 				loading="lazy"
 				alt=""
 				aria-hidden
-				className="w-[2rem] absolute inline-block -top-24 left-10"
+				className="w-full absolute inline-block [transform:rotate(-90deg)] opacity-70 -top-10 -left-20 -z-[1] md:-left-40 md:-top-20 lg:-top-1/2 lg:-left-1/5 lg:w-3/4 lg:opacity-50"
 			/>
 			<div className="w-full pl-10 flex relative">
 				<img
@@ -53,6 +53,13 @@ export default function RulesSection() {
 					className="inline-block h-4 absolute -bottom-6 right-3/4 lg:h-10 lg:-right-6 animate-pulse transition-all duration-200"
 				/>
 			</div>
+			<img
+				src={BGGlow}
+				loading="lazy"
+				alt=""
+				aria-hidden
+				className="w-full absolute inline-block opacity-70 bottom-10 -right-40 [transform:rotate(90deg)] -z-[1] md:-bottom-10 md:-right-52 lg:-bottom-2/3 lg:-right-1/4 lg:w-3/4 lg:opacity-60"
+			/>
 		</section>
 	)
 }

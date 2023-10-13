@@ -4,6 +4,7 @@ import PurpleStar from '../assets/icons/purple-star.png'
 import SilverMedal from '../assets/icons/silver_medal.svg'
 import Star from '../assets/icons/star.svg'
 import Award from '../assets/images/award.png'
+import BGGlow from '../assets/images/purple-lens-flare.png'
 
 export default function AwardSection() {
 	return (
@@ -17,6 +18,13 @@ export default function AwardSection() {
 				aria-hidden
 				loading="lazy"
 				className="inline-block w-6 h-6 absolute top-16 lg:top-28 lg:left-1/4 animate-pulse transition-all duration-200"
+			/>
+			<img
+				src={BGGlow}
+				loading="lazy"
+				alt=""
+				aria-hidden
+				className="w-full absolute inline-block [transform:rotate(-90deg)] opacity-70 top-28 -left-20 -z-[1] md:-left-40 md:-top-20 lg:top-1 lg:-left-1/5 lg:w-4/5 lg:opacity-50"
 			/>
 			<div className="flex flex-col gap-2 lg:w-[40%] lg:ml-auto lg:mr-12 lg:mb-24 relative">
 				<h4 className="text-2xl font-bold lg:text-left">Prices and</h4>
@@ -112,6 +120,13 @@ export default function AwardSection() {
 					/>
 				</section>
 			</article>
+			<img
+				src={BGGlow}
+				loading="lazy"
+				alt=""
+				aria-hidden
+				className="w-full absolute inline-block opacity-70 -bottom-20 -right-40 [transform:rotate(90deg)] -z-[1] md:-bottom-10 md:-right-52 lg:-bottom-1/4 lg:-right-1/4 lg:w-4/5 lg:opacity-60"
+			/>
 		</section>
 	)
 }
