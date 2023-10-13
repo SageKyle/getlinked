@@ -10,6 +10,7 @@ export default function FAQSection() {
 	return (
 		<section
 			className="w-full flex items-center justify-center border-b border-primary-border"
+			id="faq"
 			aria-description="frequently asked questions"
 		>
 			<article className="w-[90%] mx-auto flex flex-col gap-4 items-center justify-center p-8 lg:px-24 py-10 lg:flex-row lg:pt-20 relative 2xl:max-w-[80%]">

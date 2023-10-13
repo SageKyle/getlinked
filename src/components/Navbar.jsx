@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 import CloseNav from '../assets/icons/close-nav.svg'
 import Hamburger from '../assets/icons/hamburger.svg'
 import Logo from '../assets/icons/logo.svg'
@@ -41,16 +42,22 @@ export default function Navbar() {
 						className={`flex flex-col items-start gap-8 lg:flex-row list-none`}
 					>
 						<li>
-							<NavLink to={''}>timeline</NavLink>
+							<HashLink smooth to={'/#timeline'}>
+								timeline
+							</HashLink>
 						</li>
 						<li>
-							<NavLink to={''}>overview</NavLink>
+							<HashLink smooth to={'/#overview'}>
+								overview
+							</HashLink>
 						</li>
 						<li>
-							<NavLink to={''}>FAQs</NavLink>
+							<HashLink smooth to={'/#faq'}>
+								FAQs
+							</HashLink>
 						</li>
 						<li>
-							<NavLink to={''}>contact</NavLink>
+							<NavLink to={'/contact'}>contact</NavLink>
 						</li>
 					</ul>
 					<PrimaryBtn text={'register'} link={'/register'} />

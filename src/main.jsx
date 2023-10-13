@@ -9,15 +9,15 @@ import {
 import App from './App.jsx'
 import './index.css'
 
+import Contact from './screens/Contact'
 import Home from './screens/Home'
-import Login from './screens/Login'
-import Register from './screens/Register.jsx'
+import Register from './screens/Register'
 
 const router = createBrowserRouter(
 	createRoutesFromElements(
 		<Route element={<App />} path="/">
 			<Route element={<Home />} path="/" index />
-			<Route element={<Login />} path="/login" />
+			<Route element={<Contact />} path="/contact" />
 			<Route element={<Register />} path="/register" />
 		</Route>
 	)

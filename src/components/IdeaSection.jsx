@@ -7,6 +7,7 @@ export default function IdeaSection() {
 	return (
 		<section
 			className="w-full grid gap-4 items-center justify-center border-b border-primary-border px-8 py-10 lg:grid-cols-2 lg:max-h-[80vh] overflow-hidden"
+			id="overview"
 			aria-describedby="idea-section"
 		>
 			<motion.div

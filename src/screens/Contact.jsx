@@ -1,7 +1,7 @@
-export default function Login() {
+export default function Contact() {
 	return (
 		<section>
-			<h1>This is the login page</h1>
+			<h1>This is the Contact page</h1>
 			<p>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
 				architecto libero quo vero cupiditate sunt facere cumque dolorum neque.
