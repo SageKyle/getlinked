@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import Styles from '../assets/styles/Timeline.module.css'
+import Styles from '../../assets/styles/Timeline.module.css'
 
 export default function TimelineSection() {
 	return (

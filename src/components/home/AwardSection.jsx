@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion'
-import BronzeMedal from '../assets/icons/bronze_medal.svg'
-import GoldMedal from '../assets/icons/gold_medal.svg'
-import PurpleStar from '../assets/icons/purple-star.png'
-import SilverMedal from '../assets/icons/silver_medal.svg'
-import Star from '../assets/icons/star.svg'
-import Award from '../assets/images/award.png'
-import BGGlow from '../assets/images/purple-lens-flare.png'
+import BronzeMedal from '../../assets/icons/bronze_medal.svg'
+import GoldMedal from '../../assets/icons/gold_medal.svg'
+import PurpleStar from '../../assets/icons/purple-star.png'
+import SilverMedal from '../../assets/icons/silver_medal.svg'
+import Star from '../../assets/icons/star.svg'
+import Award from '../../assets/images/award.png'
+import BGGlow from '../../assets/images/purple-lens-flare.png'
 
 export default function AwardSection() {
 	return (

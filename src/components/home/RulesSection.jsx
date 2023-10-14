@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
-import Star from '../assets/icons/star.svg'
-import BGGlow from '../assets/images/purple-lens-flare.png'
-import RulesImage from '../assets/images/solving-puzzle.png'
+import Star from '../../assets/icons/star.svg'
+import BGGlow from '../../assets/images/purple-lens-flare.png'
+import RulesImage from '../../assets/images/solving-puzzle.png'
 
 export default function RulesSection() {
 	return (

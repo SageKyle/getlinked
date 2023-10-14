@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion'
-import Circle from '../assets/icons/circle.svg'
-import PurpleStar from '../assets/icons/purple-star.png'
-import Star from '../assets/icons/star.svg'
-import CriteriaImage from '../assets/images/checking-criteria.png'
-import BGGlow from '../assets/images/purple-lens-flare.png'
-import PrimaryBtn from '../utils/PrimaryBtn'
+import Circle from '../../assets/icons/circle.svg'
+import PurpleStar from '../../assets/icons/purple-star.png'
+import Star from '../../assets/icons/star.svg'
+import CriteriaImage from '../../assets/images/checking-criteria.png'
+import BGGlow from '../../assets/images/purple-lens-flare.png'
+import PrimaryBtn from '../../utils/PrimaryBtn'
 
 export default function CritieriaSection() {
 	return (

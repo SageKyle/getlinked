@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion'
-import Checkmark from '../assets/icons/checkmark.svg'
-import PurpleStar from '../assets/icons/purple-star.png'
-import Star from '../assets/icons/star.svg'
-import PolicyImage from '../assets/images/policy-img.png'
-import BGGlow from '../assets/images/purple-lens-flare.png'
-import SecurityImage from '../assets/images/secure.svg'
-import PrimaryBtn from '../utils/PrimaryBtn'
+import Checkmark from '../../assets/icons/checkmark.svg'
+import PurpleStar from '../../assets/icons/purple-star.png'
+import Star from '../../assets/icons/star.svg'
+import PolicyImage from '../../assets/images/policy-img.png'
+import BGGlow from '../../assets/images/purple-lens-flare.png'
+import SecurityImage from '../../assets/images/secure.svg'
+import PrimaryBtn from '../../utils/PrimaryBtn'
 
 export default function PolicySection() {
 	return (

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
-import ArrowIcon from '../assets/icons/arrow.svg'
-import PurpleStar from '../assets/icons/purple-star.png'
-import Idea from '../assets/images/idea-illustration.png'
+import ArrowIcon from '../../assets/icons/arrow.svg'
+import PurpleStar from '../../assets/icons/purple-star.png'
+import Idea from '../../assets/images/idea-illustration.png'
 
 export default function IdeaSection() {
 	return (

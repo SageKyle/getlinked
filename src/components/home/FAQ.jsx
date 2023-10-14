@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion'
-import PurpleStar from '../assets/icons/purple-star.png'
-import QuestionMark from '../assets/icons/question-mark-1.svg'
-import QuestionMark2 from '../assets/icons/question-mark-2.svg'
-import QuestionMark3 from '../assets/icons/question-mark-3.svg'
-import Star from '../assets/icons/star.svg'
-import FaqImage from '../assets/images/faq.png'
+import PurpleStar from '../../assets/icons/purple-star.png'
+import QuestionMark from '../../assets/icons/question-mark-1.svg'
+import QuestionMark2 from '../../assets/icons/question-mark-2.svg'
+import QuestionMark3 from '../../assets/icons/question-mark-3.svg'
+import Star from '../../assets/icons/star.svg'
+import FaqImage from '../../assets/images/faq.png'
 
 export default function FAQSection() {
 	return (

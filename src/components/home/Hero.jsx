@@ -1,13 +1,13 @@
 import { motion } from 'framer-motion'
-import ChainIcon from '../assets/icons/chain.svg'
-import FireIcon from '../assets/icons/fire.svg'
-import LightbulbIcon from '../assets/icons/lightbulb.svg'
-import PurpleLine from '../assets/icons/purple-underline.png'
-import HeroImage from '../assets/images/hackathon-guy.png'
-import BGGlow from '../assets/images/purple-lens-flare.png'
-import useCountdownTimer from '../hooks/useCountdown'
-import PrimaryBtn from '../utils/PrimaryBtn'
-import TypewriterEffect from '../utils/TypewritterEffect'
+import ChainIcon from '../../assets/icons/chain.svg'
+import FireIcon from '../../assets/icons/fire.svg'
+import LightbulbIcon from '../../assets/icons/lightbulb.svg'
+import PurpleLine from '../../assets/icons/purple-underline.png'
+import HeroImage from '../../assets/images/hackathon-guy.png'
+import BGGlow from '../../assets/images/purple-lens-flare.png'
+import useCountdownTimer from '../../hooks/useCountdown'
+import PrimaryBtn from '../../utils/PrimaryBtn'
+import TypewriterEffect from '../../utils/TypewritterEffect'
 
 export default function Hero() {
 	const targetDate = new Date('2023-11-18T00:00:00Z')

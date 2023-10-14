@@ -1,12 +1,12 @@
-import LibertyLogo from '../assets/icons/liberty-company-logo.png'
-import LibertyPayLogo from '../assets/icons/liberty-pay-logo.png'
-import PayboxLogo from '../assets/icons/paybox.png'
-import PurpleStar from '../assets/icons/purple-star.png'
-import Star from '../assets/icons/star.svg'
-import VuzualLogo from '../assets/icons/vizual-plus.png'
-import WinwiseLogo from '../assets/icons/winwise-logo.png'
-import WisperLogo from '../assets/icons/wisper-logo.png'
-import BGGlow from '../assets/images/purple-lens-flare.png'
+import LibertyLogo from '../../assets/icons/liberty-company-logo.png'
+import LibertyPayLogo from '../../assets/icons/liberty-pay-logo.png'
+import PayboxLogo from '../../assets/icons/paybox.png'
+import PurpleStar from '../../assets/icons/purple-star.png'
+import Star from '../../assets/icons/star.svg'
+import VuzualLogo from '../../assets/icons/vizual-plus.png'
+import WinwiseLogo from '../../assets/icons/winwise-logo.png'
+import WisperLogo from '../../assets/icons/wisper-logo.png'
+import BGGlow from '../../assets/images/purple-lens-flare.png'
 
 export default function PartnersSection() {
 	return (
