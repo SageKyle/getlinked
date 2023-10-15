@@ -1,8 +1,13 @@
+import { motion } from 'framer-motion'
+import { useState } from 'react'
 import PurpleStar from '../assets/icons/purple-star.png'
 import Star from '../assets/icons/star.svg'
 import IllustrationImg from '../assets/images/3d-graphic-designer-showing-thumbs-up.png'
+import RegistrationSuccessModal from '../modals/RegistrationSuccessModal'
 
 export default function Register() {
+	const [showModal, toggleModal] = useState(false)
+
 	return (
 		<section
 			aria-description="registration page"
@@ -15,7 +20,16 @@ export default function Register() {
 				>
 					register
 				</h1>
-				<img
+				<motion.img
+					initial={{ opacity: 0, x: '-100%' }}
+					whileInView={{ opacity: 1, x: 0 }}
+					transition={{
+						duration: 2,
+						delay: 0,
+						type: 'spring',
+						stiffness: 100,
+					}}
+					layout
 					src={IllustrationImg}
 					loading="lazy"
 					alt="register for the Getlinked Hackathon 1.0"
@@ -64,7 +78,16 @@ export default function Register() {
 					create your account
 				</h2>
 				<fieldset className="flex flex-col lg:flex-row w-full gap-4 mb-6 text-sm lg:gap-10">
-					<label className="w-full grid gap-1">
+					<motion.label
+						initial={{ opacity: 0, y: '-150%' }}
+						whileInView={{ opacity: 1, y: 0 }}
+						transition={{
+							duration: 1,
+							delay: 0.1,
+						}}
+						layout
+						className="w-full grid gap-1"
+					>
 						<span>Team&apos;s Name</span>
 						<input
 							type="text"
@@ -74,8 +97,17 @@ export default function Register() {
 							autoComplete="on"
 							placeholder="Enter the name of your group"
 						/>
-					</label>
-					<label className="w-full grid gap-1">
+					</motion.label>
+					<motion.label
+						initial={{ opacity: 0, y: '-150%' }}
+						whileInView={{ opacity: 1, y: 0 }}
+						transition={{
+							duration: 1,
+							delay: 0.2,
+						}}
+						layout
+						className="w-full grid gap-1"
+					>
 						<span>Phone</span>
 						<input
 							type="tel"
@@ -85,10 +117,19 @@ export default function Register() {
 							autoComplete="on"
 							placeholder="Enter the your phone number"
 						/>
-					</label>
+					</motion.label>
 				</fieldset>
 				<fieldset className="flex flex-col lg:flex-row w-full gap-4 text-sm lg:gap-10 mb-6">
-					<label className="w-full grid gap-1">
+					<motion.label
+						initial={{ opacity: 0, y: '-150%' }}
+						whileInView={{ opacity: 1, y: 0 }}
+						transition={{
+							duration: 1,
+							delay: 0.3,
+						}}
+						layout
+						className="w-full grid gap-1"
+					>
 						<span className="capitalize">Email</span>
 						<input
 							type="email"
@@ -98,8 +139,17 @@ export default function Register() {
 							autoComplete="on"
 							placeholder="Enter your email address"
 						/>
-					</label>
-					<label className="w-full grid gap-1">
+					</motion.label>
+					<motion.label
+						initial={{ opacity: 0, y: '-150%' }}
+						whileInView={{ opacity: 1, y: 0 }}
+						transition={{
+							duration: 1,
+							delay: 0.4,
+						}}
+						layout
+						className="w-full grid gap-1"
+					>
 						<span className="capitalize">Project topic</span>
 						<input
 							type="text"
@@ -109,10 +159,19 @@ export default function Register() {
 							autoComplete="on"
 							placeholder="What is your team project topic"
 						/>
-					</label>
+					</motion.label>
 				</fieldset>
 				<fieldset className="flex w-full gap-4 mb-4 text-sm lg:gap-10">
-					<label className="w-full grid gap-1">
+					<motion.label
+						initial={{ opacity: 0, y: '-150%' }}
+						whileInView={{ opacity: 1, y: 0 }}
+						transition={{
+							duration: 1,
+							delay: 0.5,
+						}}
+						layout
+						className="w-full grid gap-1"
+					>
 						<span className="capitalize">Category</span>
 						<select
 							required
@@ -120,19 +179,33 @@ export default function Register() {
 							className="w-full py-2 px-3 md:px-4 bg-transparent border rounded focus:outline-0 focus:border-primary-light [box-shadow:0px_4px_4px_0px_rgba(0,_0,_0,_0.25)]"
 						>
 							<option value="">Select your category</option>
+							<option value="mobile">MOBILE</option>
+							<option value="web">WEB</option>
+							<option value="ui/ux">UI/UX</option>
 						</select>
-					</label>
+					</motion.label>
 
-					<label className="w-[43%] lg:w-full grid gap-1">
+					<motion.label
+						initial={{ opacity: 0, y: '-150%' }}
+						whileInView={{ opacity: 1, y: 0 }}
+						transition={{
+							duration: 1,
+							delay: 0.6,
+						}}
+						layout
+						className="w-[43%] lg:w-full grid gap-1"
+					>
 						<span className="capitalize">Group size</span>
-						<select
+						<input
+							type="number"
 							required
+							min={1}
+							minLength={1}
+							placeholder="Select group size"
 							name="groupSize"
 							className="w-full p-2 lg:px-4 bg-transparent border rounded focus:outline-0 focus:border-primary-light [box-shadow:0px_4px_4px_0px_rgba(0,_0,_0,_0.25)]"
-						>
-							<option value="">Select</option>
-						</select>
-					</label>
+						/>
+					</motion.label>
 				</fieldset>
 				<p className="text-primary-light text-xs md:text-sm italic">
 					Please review your registration details before submitting
@@ -148,12 +221,20 @@ export default function Register() {
 						I agreed with the event terms and conditions and privacy policy
 					</span>
 				</label>
-				<button
+				<motion.button
+					initial={{ opacity: 0, y: '150%' }}
+					whileInView={{ opacity: 1, y: 0 }}
+					transition={{
+						duration: 1,
+						delay: 0.7,
+					}}
+					layout
+					onClick={() => toggleModal(true)}
 					type="button"
 					className="bg-gradient font-semibold text-xl rounded py-4 px-8 mt-6 capitalize flex justify-center w-3/4 mx-auto lg:w-full cursor-pointer hover:bg-primary hover:bg-blend-soft-light ease-in-out hover:duration-300 hover:transition-colors active:translate-y-2"
 				>
 					register now
-				</button>
+				</motion.button>
 				<img
 					src={PurpleStar}
 					alt=""
@@ -169,6 +250,7 @@ export default function Register() {
 				loading="lazy"
 				className="hidden lg:inline-block md:w-4 md:h-4 absolute -bottom-4 right-20"
 			/>
+			{showModal && <RegistrationSuccessModal />}
 		</section>
 	)
 }
