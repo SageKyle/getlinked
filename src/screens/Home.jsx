@@ -8,20 +8,24 @@ import PartnersSection from '../components/home/PartnersSection'
 import PolicySection from '../components/home/PolicySection'
 import RulesSection from '../components/home/RulesSection'
 import TimelineSection from '../components/home/TimelineSection'
+import Navbar from '../components/Navbar'
 
 export default function Home() {
 	return (
-		<section className="relative overflow-x-hidden">
-			<Hero />
-			<IdeaSection />
-			<RulesSection />
-			<CritieriaSection />
-			<FAQSection />
-			<TimelineSection />
-			<AwardSection />
-			<PartnersSection />
-			<PolicySection />
-			<Footer />
-		</section>
+		<>
+			<Navbar />
+			<section className="relative overflow-x-hidden">
+				<Hero />
+				<IdeaSection />
+				<RulesSection />
+				<CritieriaSection />
+				<FAQSection />
+				<TimelineSection />
+				<AwardSection />
+				<PartnersSection />
+				<PolicySection />
+				<Footer />
+			</section>
+		</>
 	)
 }

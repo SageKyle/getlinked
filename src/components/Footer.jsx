@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 import FacebookIcon from '../assets/icons/facebook.svg'
 import InstagramIcon from '../assets/icons/instagram.svg'
 import LinkedinIcon from '../assets/icons/linkedin.svg'
@@ -55,15 +56,15 @@ export default function Footer() {
 					<h4 className="text-xl font-bold lg:text-left text-primary">
 						Useful Links
 					</h4>
-					<Link to={'/#overview'} className="py-2">
+					<HashLink to={'/#overview'} className="py-2">
 						Overview
-					</Link>
-					<Link to={'/#timeline'} className="py-2">
+					</HashLink>
+					<HashLink to={'/#timeline'} className="py-2">
 						Timeline
-					</Link>
-					<Link to={'/#faq'} className="py-2">
+					</HashLink>
+					<HashLink to={'/#faq'} className="py-2">
 						FAQs
-					</Link>
+					</HashLink>
 					<Link to={'register'} className="py-2">
 						Register
 					</Link>

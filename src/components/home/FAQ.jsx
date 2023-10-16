@@ -44,8 +44,9 @@ export default function FAQSection() {
 								</span>
 							</summary>
 							<p className="mb-2 text-gray-600">
-								Lorem ipsum dolorsit amet consectetur adipisicing elit.
-								Doloremque, quis?
+								Yes, you can work on a project you started before the hackathon.
+								However, you must disclose this information to the judges during
+								the judging process.
 							</p>
 						</details>
 
@@ -56,7 +57,11 @@ export default function FAQSection() {
 									+
 								</span>
 							</summary>
-							<p className="mb-2 text-gray-600">.</p>
+							<p className="mb-2 text-gray-600">
+								We will have mentors available to help you with any technical or
+								non-technical issues you may face during the hackathon. You can
+								also reach out to the organizers via the Discord server.
+							</p>
 						</details>
 
 						<details className="w-full  border-b border-primary">
@@ -69,8 +74,9 @@ export default function FAQSection() {
 								</span>
 							</summary>
 							<p className="mb-2 text-gray-600">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
-								sequi.
+								We will have mentors available to help you with any technical or
+								non-technical issues you may face during the hackathon. You can
+								also reach out to the organizers via the Discord server.
 							</p>
 						</details>
 
@@ -82,8 +88,10 @@ export default function FAQSection() {
 								</span>
 							</summary>
 							<p className="mb-2 text-gray-600">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
-								sequi.
+								You can join a team or come with one. If you don&apos;t have a
+								team, we will have a team formation session at the beginning of
+								the hackathon where you can meet other participants and form a
+								team.
 							</p>
 						</details>
 
@@ -95,24 +103,10 @@ export default function FAQSection() {
 								</span>
 							</summary>
 							<p className="mb-2 text-gray-600">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
-								sequi.
-							</p>
-						</details>
-
-						<details className="w-full  border-b border-primary">
-							<summary className="py-4 cursor-pointer flex items-center justify-between">
-								<span>
-									Can I work on a project I started before the hackathon?
-								</span>
-								<span className="text-primary text-2xl font-bold inline-block ml-2">
-									+
-								</span>
-							</summary>
-							<p className="mb-2 text-gray-600">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
-								sequi. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-								Iste vitae distinctio, pariatur voluptatum iusto rerum!
+								Each team&apos;s project would be evaluated by the judges, and
+								the winners would be announced. The top three teams would be
+								awarded prizes. The other teams would be mentored to help them
+								improve and complete their projects.
 							</p>
 						</details>
 					</div>
