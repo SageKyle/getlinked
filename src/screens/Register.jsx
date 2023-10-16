@@ -8,6 +8,11 @@ import RegistrationSuccessModal from '../modals/RegistrationSuccessModal'
 export default function Register() {
 	const [showModal, toggleModal] = useState(false)
 
+	function handleSubmit(event) {
+		event.preventDefault()
+		toggleModal(true)
+	}
+
 	return (
 		<section
 			aria-description="registration page"
@@ -57,7 +62,10 @@ export default function Register() {
 					className="hidden md:inline-block w-4 h-4 md:w-6 md:h-6 absolute top-40 left-10"
 				/>
 			</div>
-			<form className="relative px-10 w-full md:px-20 md:py-16 lg:rounded-xl lg:shadow lg:bg-[rgba(255,_255,_255,_0.03)] 2xl:max-w-2xl relative">
+			<form
+				onSubmit={handleSubmit}
+				className="relative px-10 w-full md:px-20 md:py-16 lg:rounded-xl lg:shadow lg:bg-[rgba(255,_255,_255,_0.03)] 2xl:max-w-2xl relative"
+			>
 				<img
 					src={Star}
 					alt=""
@@ -176,7 +184,7 @@ export default function Register() {
 						<select
 							required
 							name="category"
-							className="w-full py-2 px-3 md:px-4 bg-transparent border rounded focus:outline-0 focus:border-primary-light [box-shadow:0px_4px_4px_0px_rgba(0,_0,_0,_0.25)]"
+							className="w-full py-2 px-3 md:px-4 bg-transparent border rounded focus:outline-0 focus:text-slate-700 focus:border-primary-light [box-shadow:0px_4px_4px_0px_rgba(0,_0,_0,_0.25)]"
 						>
 							<option value="">Select your category</option>
 							<option value="mobile">MOBILE</option>
@@ -214,6 +222,7 @@ export default function Register() {
 					<input
 						type="checkbox"
 						name="agree"
+						required
 						id="agree"
 						className="relative focus:outline-0 after:block after:absolute after:inset-0 after:bg-[#150e28] after:border after:border-white after:rounded checked:after:hidden"
 					/>
@@ -229,8 +238,7 @@ export default function Register() {
 						delay: 0.7,
 					}}
 					layout
-					onClick={() => toggleModal(true)}
-					type="button"
+					type="submit"
 					className="bg-gradient font-semibold text-xl rounded py-4 px-8 mt-6 capitalize flex justify-center w-3/4 mx-auto lg:w-full cursor-pointer hover:bg-primary hover:bg-blend-soft-light ease-in-out hover:duration-300 hover:transition-colors active:translate-y-2"
 				>
 					register now

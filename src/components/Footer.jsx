@@ -55,16 +55,16 @@ export default function Footer() {
 					<h4 className="text-xl font-bold lg:text-left text-primary">
 						Useful Links
 					</h4>
-					<Link to={'#'} className="py-2">
+					<Link to={'/#overview'} className="py-2">
 						Overview
 					</Link>
-					<Link to={'#'} className="py-2">
+					<Link to={'/#timeline'} className="py-2">
 						Timeline
 					</Link>
-					<Link to={'#'} className="py-2">
+					<Link to={'/#faq'} className="py-2">
 						FAQs
 					</Link>
-					<Link to={'#'} className="py-2">
+					<Link to={'register'} className="py-2">
 						Register
 					</Link>
 
