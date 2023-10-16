@@ -1,6 +1,6 @@
 import LibertyLogo from '../../assets/icons/liberty-company-logo.png'
 import LibertyPayLogo from '../../assets/icons/liberty-pay-logo.png'
-// import PayboxLogo from '../../assets/icons/paybox.png'
+import PayboxLogo from '../../assets/icons/paybox-logo.png'
 import PurpleStar from '../../assets/icons/purple-star.png'
 import Star from '../../assets/icons/star.svg'
 import VuzualLogo from '../../assets/icons/vizual-plus.png'
@@ -84,7 +84,7 @@ export default function PartnersSection() {
 
 				<div className="w-full h-24 flex items-center p-6">
 					<img
-						src={LibertyPayLogo}
+						src={PayboxLogo}
 						alt="paybox company logo"
 						title="Paybox"
 						className="h-full justify-center object-contain mx-auto"
